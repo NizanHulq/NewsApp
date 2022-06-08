@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">NewsApp</string>
+
+    <string name="news_category">Category</string>
+
+    <string name="news_detail">News Detail</string>
+
+    <string name="news_region">News Region</string>
+
+    <string name="app_language">Language</string>
+
+    <string name="tech_cat">Technology</string>
+    <string name="science_cat">Science</string>
+    <string name="sport_cat">Sports</string>
+    <string name="general_cat">General</string>
+    <string name="business_cat">Business</string>
+    <string name="entertainer_cat">Entertainment</string>
+    <string name="health_cat">Health</string>
+    
 </resources>

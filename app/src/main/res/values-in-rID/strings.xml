@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AppBerita</string>
+    <string name="news_category">Kategori</string>
+    <string name="news_detail">Detail Berita</string>
+    <string name="news_region">Asal Berita</string>
+    <string name="app_language">Bahasa</string>
+    <string name="tech_cat">Teknologi</string>
+    <string name="science_cat">Sains</string>
+    <string name="sport_cat">Olahraga</string>
+    <string name="general_cat">Umum</string>
+    <string name="business_cat">Bisnis</string>
+    <string name="health_cat">Kesehatan</string>
+    <string name="entertainer_cat">Hiburan</string>
+</resources>

@@ -1,6 +1,10 @@
 package com.example.newsapp;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.provider.Settings;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.Toast;
@@ -27,6 +31,24 @@ public class MainActivity extends AppCompatActivity implements CategoryRVAdapter
     private ArrayList<CategoryRVModal> categoryRVModalsArrayList;
     private CategoryRVAdapter categoryRVAdapter;
     private NewsRVAdapter newsRVAdapter;
+
+    //Memanggil menu bar
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        //return super.onCreateOptionsMenu(menu);
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        if (id == R.id.action_language){
+            Intent intent = new Intent(Settings.ACTION_LOCALE_SETTINGS);
+            startActivity(intent);
+        }
+        return super.onOptionsItemSelected(item);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -16,11 +16,11 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="News App"
+                android:text="@string/app_name"
                 android:textColor="@color/purple"
                 android:textAlignment="center"
                 android:padding="4dp"
@@ -33,30 +33,29 @@
     </androidx.appcompat.widget.Toolbar>
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/idRVCategories"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/idRVCategories"
-        android:orientation="horizontal"
         android:layout_below="@id/idToolbar"
-        tools:listitem="@layout/categories"
+        android:layout_above="@id/idPBLoading"
+        android:orientation="horizontal"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        android:layout_marginLeft="10dp"
-        />
+        tools:listitem="@layout/categories" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/idRVCategories"
         android:id="@+id/idRVNews"
-        android:layout_marginTop="5dp"
-        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idRVCategories"
         android:layout_marginStart="5dp"
-        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
         android:layout_marginEnd="5dp"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:layout_marginRight="5dp"
         android:orientation="vertical"
-        tools:listitem="@layout/news_rv_item"
-        />
+
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/news_rv_item" />
 
     <ProgressBar
         android:id="@+id/idPBLoading"

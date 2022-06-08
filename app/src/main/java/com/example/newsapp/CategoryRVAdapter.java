@@ -1,5 +1,6 @@
 package com.example.newsapp;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -42,7 +43,7 @@ public class CategoryRVAdapter extends RecyclerView.Adapter<CategoryRVAdapter.Vi
     }
 
     @Override
-    public void onBindViewHolder(@NonNull CategoryRVAdapter.Viewholder holder, int position) {
+    public void onBindViewHolder(@NonNull CategoryRVAdapter.Viewholder holder, @SuppressLint("RecyclerView") int position) {
         CategoryRVModal categoryRVModal = categoryRVModals.get(position);
         holder.categoryTV.setText(categoryRVModal.getCategory());
         Picasso.get().load(categoryRVModal.getCategoryImageUrl()).into(holder.categoryIV);
@@ -50,7 +51,7 @@ public class CategoryRVAdapter extends RecyclerView.Adapter<CategoryRVAdapter.Vi
             @Override
             public void onClick(View view) {
                 //This mfs don't want to cooperate well
-                categoryClickInterface.onCategoryClick(holder.getAdapterPosition());
+                categoryClickInterface.onCategoryClick(position);
             }
         });
     }
