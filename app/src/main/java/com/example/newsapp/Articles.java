@@ -1,18 +1,29 @@
 package com.example.newsapp;
 
 public class Articles {
+
+    private String author;
     private String title;
     private String description;
     private String urlToImage;
     private String url;
     private String content;
 
-    public Articles(String title, String description, String urlToImage, String url, String content) {
+    public Articles(String author, String title, String description, String urlToImage, String url, String content) {
+        this.author = author;
         this.title = title;
         this.description = description;
         this.urlToImage = urlToImage;
         this.url = url;
         this.content = content;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
     }
 
     public String getTitle() {

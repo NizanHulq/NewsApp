@@ -25,9 +25,22 @@
                 android:textAlignment="center"
                 android:padding="4dp"
                 android:gravity="center"
+                android:textSize="18dp"
                 android:layout_marginEnd="15dp"
                 android:textStyle="bold"
                 android:layout_marginRight="15dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/temperatureBar"
+                android:layout_marginEnd="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center"
+                android:text="@string/temp_text"
+                android:textAlignment="center"
+                android:textColor="@color/teal_200"
+                android:textStyle="bold" />
 
         </RelativeLayout>
     </androidx.appcompat.widget.Toolbar>
@@ -37,10 +50,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/idToolbar"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
         android:layout_above="@id/idPBLoading"
         android:orientation="horizontal"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        tools:listitem="@layout/categories" />
+        tools:listitem="@layout/categories_full" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/idRVNews"

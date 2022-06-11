@@ -11,9 +11,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/black_shade_1"
-        app:titleTextColor="@color/yellow"
+        app:titleTextColor="@color/purple"
 
-        app:title="News App"
+        app:title="@string/app_name"
         android:id="@+id/toolbar"
         />
 
@@ -41,10 +41,10 @@
                 android:layout_height="wrap_content"
                 android:text="Title"
                 android:id="@+id/idTVTitle"
-                android:textColor="@color/yellow"
+                android:textColor="@color/purple"
                 android:layout_below="@id/idIVNews"
                 android:textStyle="bold"
-                android:textSize="28sp"
+                android:textSize="20dp"
                 android:padding="4dp"
                 android:layout_margin="4dp"
                 />
@@ -78,15 +78,17 @@
         android:id="@+id/idBtnReadNews"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Read Full News!"
-        android:background="@color/yellow"
-        app:backgroundTint="@color/yellow"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="28dp"
         android:layout_marginLeft="28dp"
         android:layout_marginEnd="28dp"
         android:layout_marginBottom="28dp"
-        android:textAllCaps="false"/>
+        android:background="@color/yellow"
+        android:text="@string/news_detail"
+        android:textAllCaps="false"
+        android:textColor="@color/black_shade_1"
+        app:backgroundTint="@color/yellow"
+        app:cornerRadius="30dp" />
 
 
 </RelativeLayout>

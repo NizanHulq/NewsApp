@@ -1,6 +1,5 @@
 package com.example.newsapp;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -37,13 +36,13 @@ public class CategoryRVAdapter extends RecyclerView.Adapter<CategoryRVAdapter.Vi
     @NonNull
     @Override
     public CategoryRVAdapter.Viewholder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.categories_rv_item,parent,false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.categories_full,parent,false);
 
         return new CategoryRVAdapter.Viewholder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull CategoryRVAdapter.Viewholder holder, @SuppressLint("RecyclerView") int position) {
+    public void onBindViewHolder(@NonNull CategoryRVAdapter.Viewholder holder, int position) {
         CategoryRVModal categoryRVModal = categoryRVModals.get(position);
         holder.categoryTV.setText(categoryRVModal.getCategory());
         Picasso.get().load(categoryRVModal.getCategoryImageUrl()).into(holder.categoryIV);
@@ -51,14 +50,14 @@ public class CategoryRVAdapter extends RecyclerView.Adapter<CategoryRVAdapter.Vi
             @Override
             public void onClick(View view) {
                 //This mfs don't want to cooperate well
-                categoryClickInterface.onCategoryClick(position);
+                categoryClickInterface.onCategoryClick(holder.getAdapterPosition());
             }
         });
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return categoryRVModals.size();
     }
 
     public interface CategoryClickInterface{

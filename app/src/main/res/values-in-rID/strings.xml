@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">AppBerita</string>
     <string name="news_category">Kategori</string>
-    <string name="news_detail">Detail Berita</string>
+    <string name="news_detail">Baca Selengkapnya</string>
     <string name="news_region">Asal Berita</string>
     <string name="app_language">Bahasa</string>
     <string name="tech_cat">Teknologi</string>

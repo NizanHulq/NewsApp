@@ -4,7 +4,7 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_margin="8dp"
-    app:cardCornerRadius="40dp"
+    app:cardCornerRadius="30dp"
     app:cardBackgroundColor="@color/grey"
     >
 
@@ -37,10 +37,28 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/idTVSubTitle"
+            android:id="@+id/idTVAuthor"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/idTVNewsHeading"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="5dp"
+            android:maxLines="2"
+            android:padding="3dp"
+            android:text="Anonymous"
+            android:textColor="@color/purple"
+            android:textSize="8sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/idTVSubTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTVAuthor"
             android:layout_marginBottom="10dp"
             android:layout_marginTop="3dp"
             android:layout_marginLeft="25dp"

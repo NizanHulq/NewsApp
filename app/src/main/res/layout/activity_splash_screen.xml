@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black_shade_1"
     tools:context=".SplashScreenActivity">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_baseline_news"
+        android:layout_width="275dp"
+        android:layout_height="283dp"
+        android:layout_centerInParent="true"
         android:padding="25dp"
-        android:layout_centerInParent="true"/>
-
+        android:src="@drawable/ic_baseline_aod_24" />
 </RelativeLayout>

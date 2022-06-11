@@ -3,7 +3,7 @@
 
     <string name="news_category">Category</string>
 
-    <string name="news_detail">News Detail</string>
+    <string name="news_detail">Read Full News</string>
 
     <string name="news_region">News Region</string>
 
@@ -16,5 +16,7 @@
     <string name="business_cat">Business</string>
     <string name="entertainer_cat">Entertainment</string>
     <string name="health_cat">Health</string>
+
+    <string name="temp_text" translatable="false">Temp: %1$.2f C</string>
     
 </resources>
