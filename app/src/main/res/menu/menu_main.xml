@@ -8,10 +8,4 @@
         android:orderInCategory="100"
         app:showAsAction="never"/>
 
-    <item
-        android:id="@+id/action_region"
-        android:title="@string/news_region"
-        android:orderInCategory="110"
-        app:showAsAction="never"/>
-
 </menu>
